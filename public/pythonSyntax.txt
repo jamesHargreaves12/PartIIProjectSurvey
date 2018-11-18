@@ -1,0 +1,51 @@
+<b>If-then-else statements</b>
+if True:
+    1
+else:
+    2
+= 1
+
+if False:
+    1
+else:
+    2
+= 2
+
+
+<b>Function structure</b>
+Def <i>function name</i> (<i>paramaters</i>)
+    <i>body</i>
+Paramaters are what is passed into the function
+Body specifies the calculation that the function makes (return specifies the result of the function)
+e.g.
+
+Def add(a,b):
+    return a + b
+Function name is add
+Paramaters are a and b 
+And the function returns a + b 
+
+So if we call add(3, 4)
+Then a is set to 3, b to 4 and the function returns 7
+
+
+<b>For-loops</b>
+For i in range(0,5): 
+    expression
+Will calculate the expression 5 times each time i will be 0,1,2,3,4 respectively
+
+Similarly
+For letter in “word”:
+    expression
+Will calculate the expression 4 times each time letter will be “w” “o” “r” “d”
+
+
+<b>Note</b>
+In python spacing is very important, so the following will finish with x=4 regardless of wether exp is true or false.
+
+x = 1
+if exp:
+    x = 2
+else:
+    x = 3
+x = 4

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spoken Language Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="codeViewer.css">
+</head>
+<body onload="setSyntaxBody()">
+
+<div class="container">
+    <div class="jumbotron" style="background-color: #337ab7; color: white;">
+        <h1>Spoken Language Survey</h1>
+        <p>James Hargreaves</p>
+    </div>
+    <div class="panel panel-primary" style="font-size: 26px">
+        <div class="panel-heading"><h4 id="pannel-title">Introduction</h4></div>
+        <div class="panel-body">
+            <div id="pannel-content">
+                Thank you for agreeing to help me gather some preliminary data for my final year project. To do this, I will be asking you to describe some code to give me an indication of the most intuitive way to speak the code snippets. I will record what you say and transcribe it. This will be split in to 3 sections with a examples at the start of each. In each section you can use the functions defined up to that point.
+            </div>
+            <div id='code-div' style='margin-top: 20px; margin-bottom: 20px; background: #F5F5F5; visibility: hidden; padding-left: 25px; padding-top: 10px; padding-bottom: 10px;'></div>
+            <div style="width: 100%; margin-top: 20px">
+                <button id="play-button" class="btn btn-info" style="marin-left: 5%; width: 15%; visibility: hidden;" onclick="playButtonClick();">Play</button>
+            </div>
+        </div>
+
+        <div class="panel-footer" style="overflow: hidden;">
+            <button id="progress-button" type="button" class="btn btn-primary" onclick="buttonClick()" style="width: 30%; float: right;">Start</button>
+            <button id="restart-recording-button" type="button" class="btn btn-primary" onclick="restartButtonClicked()" style="width: 30%; float: left; visibility: hidden">Restart recording</button>
+        </div>
+        <div id="progress-display" style="float: right">1/17</div>
+    </div>
+
+
+    <div class="panel panel-default" style="font-size: 26px;  margin-top: 60px">
+        <div class="panel-heading"><h4>Basic of python syntax</h4></div>
+        <div class="panel-body">
+            <pre id="syntax-help-content" style="background-color: white"></pre>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+<script src="recordAudio.js"></script>
+<script src="frontEnd.js"></script>
+<script src="firebaseConnector.js"></script>
+<script src="pythonViewer.js"></script>
+
+</body>
+</html>
